@@ -4,8 +4,7 @@ import os
 import cv2
 
 # Reading the data
-# DATADIR = 'C:/Users/nandi/AppData/Local/Programs/Python/Python310/Hackathon/Data/MOVs/Adjectives'
-DATADIR = 'C:/Users/nandi/AppData/Local/Programs/Python/Python310/Hackathon/Data/ISL_Dataset'
+DATADIR = # path
 CATEGORIES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'K', 'L', 'M',
               'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Z']
 
@@ -22,7 +21,7 @@ new_array = cv2.resize(img_array, (IMG_SIZE, IMG_SIZE))
 
 training_data = []
 
-DATADIR = 'C:/Users/nandi/AppData/Local/Programs/Python/Python310/Hackathon/Data/ISL_Dataset'
+DATADIR =  # path
 CATEGORIES = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I', 'K', 'L', 'M',
               'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Z']
 
@@ -69,8 +68,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout, Activation, Flatten, Conv2D, MaxPooling2D
 
 # Loading the data
-X = pickle.load(open("C:/Users/nandi/AppData/Local/Programs/Python/Python310/Hackathon/Sign language interpreter/X.pickle", "rb"))
-y = pickle.load(open("C:/Users/nandi/AppData/Local/Programs/Python/Python310/Hackathon/Sign language interpreter/y.pickle", "rb"))
+X = pickle.load(open("# path", "rb"))
+y = pickle.load(open("# path", "rb"))
 
 X = X / 255.0
 
